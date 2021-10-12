@@ -28,7 +28,7 @@ const defaultProps = {
   customattributes: {},
 };
 
-const ChatWootWidget = ({
+const KonnectWidget = ({
   isModalVisible,
   baseUrl,
   websiteToken,

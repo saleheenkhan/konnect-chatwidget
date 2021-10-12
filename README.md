@@ -1,28 +1,21 @@
 <h1>
-chatwoot-react-native-widget
+Konnect React-Native Chat Widget
 </h1>
 
-![](https://img.shields.io/npm/v/@chatwoot/react-native-widget?style=flat)
-![](https://img.shields.io/npm/dt/@chatwoot/react-native-widget.svg)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-![](https://img.shields.io/npm/l/@chatwoot/@chatwoot/react-native-widget)
-
-- **Supported Chatwoot version:** 1.13.2+
-
-<img src="https://user-images.githubusercontent.com/12408980/112000864-99ef4d80-8adb-11eb-94c1-9901a13b4dd4.png" alt="screenshot" width="350">
+***
 
 ### Installation
 
 Install the library using either yarn or npm like so:
 
 ```sh
-yarn add @chatwoot/react-native-widget
+yarn add @saleheen/react-native-widget
 ```
 
 OR
 
 ```sh
-npm install --save @chatwoot/react-native-widget
+npm install --save @saleheen/react-native-widget
 ```
 
 This library depends on [react-native-webview](https://www.npmjs.com/package/react-native-webview) and [async-storage](https://github.com/react-native-async-storage/async-storage). Please follow the instructions provided in the docs.
@@ -37,7 +30,7 @@ cd ios && pod install
 
 ### How to use
 
-1. Create a website channel in chatwoot server by following the steps described here https://www.chatwoot.com/docs/channels/website
+1. Ask for an account to Knorket
 2. Replace `websiteToken` prop and `baseUrl`
 
 ```
@@ -46,7 +39,7 @@ import React, { useState } from 'react';
 
 import { StyleSheet, View, SafeAreaView, TouchableOpacity, Text } from 'react-native';
 
-import ChatWootWidget from '@chatwoot/react-native-widget';
+import KonnectWidget from '@saleheen/react-native-widget';
 
 const App = () => {
   const [showWidget, toggleWidget] = useState(false);
@@ -71,7 +64,7 @@ const App = () => {
       </View>
       {
         showWidget&&
-          <ChatWootWidget
+          <KonnectWidget
             websiteToken={websiteToken}
             locale={locale}
             baseUrl={baseUrl}
@@ -133,7 +126,7 @@ The whole example is in the `/example` folder.
     <td>baseUrl</td>
     <td> - </td>
     <td> String </td>
-    <td>Chatwoot installation URL</td>
+    <td>Konnect URL</td>
   </tr>
  <tr>
     <td>websiteToken</td>
@@ -174,10 +167,6 @@ The whole example is in the `/example` folder.
  </tbody>
 </table>
 
-## Feedback & Contributing
 
-Feel free to send us feedback on [Twitter](https://twitter.com/chatwootapp) or [file an issue](https://github.com/chatwoot/chatwoot-mobile-app/issues).
 
-If there's anything you'd like to chat about, please feel free to join our [Discord](https://discord.gg/cJXdrwS) chat!
-
-_Chatwoot_ &copy; 2017-2020, Chatwoot Inc - Released under the MIT License.
+&copy; 2021, OckhamLabs Inc - Released under the MIT License.
