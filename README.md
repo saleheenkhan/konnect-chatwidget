@@ -52,7 +52,7 @@ const App = () => {
   };
   const customAttributes = { accountId: 1, pricingPlan: 'paid', status: 'active' };
   const websiteToken = 'WEBSITE_TOKEN';
-  const baseUrl = 'CHATWOOT_INSTALLATION_URL';
+  const baseUrl = 'KONNECT_URL';
   const locale = 'en';
 
   return (
